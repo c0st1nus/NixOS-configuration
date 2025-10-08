@@ -23,3 +23,10 @@ It's my NixOS configuration for [Asus TUF A15 FA507NV](https://nanoreview.net/en
          ▟███▛  ▜███▙       ▜███▙             Memory: 7553MiB / 31205MiB
          ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘
 ```
+
+After system install it prefered to install Rust:
+- `rustup install stable`
+- `rustup default stable`
+- `rustup component add rust-analyzer`
+- `rustup component add rustfmt`
+- `rustup component add clippy`
