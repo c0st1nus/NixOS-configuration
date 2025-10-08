@@ -57,15 +57,6 @@
     nvtopPackages.full
     radeontop
     amdgpu_top
-    (writeShellScriptBin "nvidia-offload" ''
-      export __NV_PRIME_RENDER_OFFLOAD=1
-      export __GLX_VENDOR_LIBRARY_NAME=nvidia
-      export __VK_LAYER_NV_optimus=NVIDIA_only
-      export GBM_BACKEND=nvidia-drm
-      export __EGL_VENDOR_LIBRARY_FILENAMES=/run/opengl-driver/share/glvnd/egl_vendor.d/10_nvidia.json
-      export VK_ICD_FILENAMES=/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.x86_64.json
-      exec "$@"
-    '')
   ];
 
   environment.variables = {

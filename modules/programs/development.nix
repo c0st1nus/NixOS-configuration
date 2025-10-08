@@ -8,26 +8,22 @@
   programs.nix-ld.enable = true;
 
   environment.systemPackages = with pkgs; [
-    vscode.fhs
+    vscode
     git
     gcc
     pkg-config
-    openssl
+    openssl.dev
     nodejs
     python3Full
-    rustfmt
-    rust-analyzer
-    clippy
     rustup
     docker-compose
     sqlitebrowser
     posting
     meson
     ninja
-    glib
+    glib.dev
   ];
 
-  environment.extraOutputsToInstall = [ "dev" ];
   environment.pathsToLink = [ "/lib/pkgconfig" "/share/pkgconfig" "/include" ];
   
   environment.sessionVariables = {
