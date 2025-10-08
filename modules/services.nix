@@ -68,6 +68,8 @@
     tree
     p7zip
     mesa-demos
+    kooha
+    obs-studio
     vulkan-tools
     neofetch
     (btop.override { cudaSupport = true; rocmSupport = true; })
