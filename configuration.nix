@@ -12,6 +12,7 @@
     ./modules/programs/development.nix
     ./modules/programs/gaming.nix
     ./modules/programs/browsers.nix
+    ./modules/programs/databases.nix
     ./modules/services.nix
     ./modules/users.nix
   ];
